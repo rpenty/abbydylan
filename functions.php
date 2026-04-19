@@ -138,8 +138,9 @@ add_action( 'widgets_init', 'abbydylan_widgets_init' );
  * Enqueue scripts and styles.
  */
 function abbydylan_scripts() {
-	wp_enqueue_style( 'abbydylan-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'abbydylan-style', 'rtl', 'replace' );
+	//wp_enqueue_style( 'abbydylan-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'abbydylan-style', get_template_directory_uri() . '/css/styles.css' );
+	//wp_style_add_data( 'abbydylan-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'abbydylan-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -147,7 +148,14 @@ function abbydylan_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+function bootstrap_scripts() {
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/js/bootstrap.min.js' );
+}
+
 add_action( 'wp_enqueue_scripts', 'abbydylan_scripts' );
+add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
 
 /**
  * Implement the Custom Header feature.

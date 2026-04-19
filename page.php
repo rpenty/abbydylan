@@ -14,25 +14,25 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
+	<main role="main" class="inner cover text-start">
 		<?php
-		while ( have_posts() ) :
-			the_post();
+		//while ( have_posts() ) :
+			//the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+			//get_template_part( 'template-parts/content', 'page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
+		//endwhile;
+		// End of the loop.
 		?>
-
-	</main><!-- #main -->
+    	<div class="home-title">
+        	<h1 class="cover-heading lexend-regular">Abby Dylan</h1>
+          	<p class="lead">Actor, Teacher, Arts Advocate</p>
+          	<p class="lead">
+            	<a href="docs/Abby-Dylan-LA-resume-Agent.pdf" target="_blank" class="btn btn-secondary lexend-regular">Acting Resume</a>
+            	<a href="docs/Abby-Dylan-Teaching-Resume.pdf" target="_blank" class="btn btn-secondary lexend-regular">Teaching Resume</a>
+          	</p>
+        </div>
+    </main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
