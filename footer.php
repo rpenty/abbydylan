@@ -16,16 +16,17 @@
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'abbydylan' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'abbydylan' ), 'WordPress' );
+				//printf( esc_html__( 'Proudly powered by %s', 'abbydylan' ), 'WordPress' );
 				?>
 			</a>
-			<span class="sep"> | </span>
+			<!-- <span class="sep"> | </span> -->
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'abbydylan' ), 'abbydylan', '<a href="http://underscores.me/">Underscores.me</a>' );
+				//printf( esc_html__( 'Theme: %1$s by %2$s.', 'abbydylan' ), 'abbydylan', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+	</div><!-- .cover-container -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

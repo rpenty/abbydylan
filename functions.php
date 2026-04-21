@@ -154,8 +154,8 @@ function bootstrap_scripts() {
 	wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/js/bootstrap.min.js' );
 }
 
-add_action( 'wp_enqueue_scripts', 'abbydylan_scripts' );
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
+add_action( 'wp_enqueue_scripts', 'abbydylan_scripts' );
 
 /**
  * Implement the Custom Header feature.

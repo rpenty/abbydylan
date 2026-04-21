@@ -70,24 +70,18 @@
 		<!-- #site-navigation -->
 	<!-- </header> -->
 	<!-- #masthead -->
-
-	<header class="masthead">
-        <div class="inner">
-          <nav class="nav nav-masthead justify-content-center">
-            <!-- <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="biography.html">Biography</a>
-            <a class="nav-link" href="gallery.html">Gallery</a>
-            <a class="nav-link" href="reel.html">Reel</a>
-            <a class="nav-link" href="arts-advocacy.html">Arts Advocacy</a>
-            <a class="nav-link" href="contact.html">Contact</a> -->
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-          </nav>
-        </div>
+	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column"> <!-- .cover-container -->
+		<header class="masthead">
+        	<div class="inner">
+				<nav class="nav nav-masthead justify-content-center">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</nav>
+        	</div>
       </header>
