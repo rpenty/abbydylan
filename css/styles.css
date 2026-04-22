@@ -109,7 +109,8 @@ body#gallery,
 body#reel,
 body#advocacy,
 body.page-template-page-inner,
-body.page-template-page-reel {
+body.page-template-page-reel,
+body.page-template-page-biography {
   background-image: none;
 }
 
@@ -259,15 +260,19 @@ h1, h2 {
     margin-bottom: 14rem;
   }
   body#gallery .masthead,
-  body#advocacy .masthead {
+  body#advocacy .masthead,
+  body.page-template-page-inner .masthead,
+  body.page-template-page-biography .masthead {
     margin-bottom: 2rem;
   }
 
-  body#contact .masthead {
+  body#contact .masthead,
+  body.page-template-page-contact .masthead {
     margin-bottom: 4rem;
   }
 
-  body#reel .masthead {
+  body#reel .masthead,
+  body.page-template-page-reel .masthead {
     margin-bottom: 5rem;
   }
 

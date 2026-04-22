@@ -151,7 +151,7 @@ function abbydylan_scripts() {
 
 function bootstrap_scripts() {
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/js/bootstrap.min.js' );
+	wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/js/bootstrap.bundle.min.js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );

@@ -22,10 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+    <!-- <link href="css/styles.css" rel="stylesheet"> -->
 
 	<?php wp_head(); ?>
 </head>

@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Reel Page */
+/* Template Name: Biography Page */
 
 get_header();
 ?>
@@ -9,8 +9,9 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-
-			get_template_part( 'template-parts/content', 'reel' );
+			
+			
+			get_template_part( 'template-parts/content', 'biography' );
 
 		endwhile; // End of the loop.
 		?>
