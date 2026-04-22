@@ -63,7 +63,8 @@ a:hover {
 }
 .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:focus,
+.wpcf7-submit {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: transparent;
@@ -214,6 +215,14 @@ h1, h2 {
   height: auto;
   float: left;
   margin-right: 1.5rem;
+}
+
+/*
+ * Contact
+ */
+
+.wpcf7-form textarea {
+  min-height: 150px;
 }
 
 /*
